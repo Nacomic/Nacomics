@@ -31,7 +31,7 @@ namespace Turbo.Plugins.User
             };
  
             _ruleCalculator = new BuffRuleCalculator(Hud);
-            _ruleCalculator.SizeMultiplier = 0.7f;
+            _ruleCalculator.SizeMultiplier = 1.0f;
  
             _ruleCalculator.Rules.Add(new BuffRule(430674) { IconIndex = 1, MinimumIconCount = 0, DisableName = true }); // Arcane
             _ruleCalculator.Rules.Add(new BuffRule(430674) { IconIndex = 2, MinimumIconCount = 0, DisableName = true }); // Cold
@@ -97,7 +97,7 @@ namespace Turbo.Plugins.User
                     for (int orderIndex = 0; orderIndex < _ruleCalculator.PaintInfoList.Count; orderIndex++)
                     {
                             var info = _ruleCalculator.PaintInfoList[orderIndex];
-                            var best = false;
+                            var best = true;
  
                             switch (info.Rule.IconIndex)
                             {
