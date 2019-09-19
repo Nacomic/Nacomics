@@ -35,7 +35,7 @@ namespace Turbo.Plugins.CB
                     Radius = 3	
                 },
 				new GroundCircleDecorator(Hud) {
-                    Brush = Hud.Render.CreateBrush(255, 240, 213, 10, 1, SharpDX.Direct2D1.DashStyle.Dash),
+                    Brush = Hud.Render.CreateBrush(255, 240, 213, 10, 5, SharpDX.Direct2D1.DashStyle.Dash),
                     Radius = 2	
                 },
 				new GroundCircleDecorator(Hud) {
@@ -46,11 +46,11 @@ namespace Turbo.Plugins.CB
 			
             RareDecorator = new WorldDecoratorCollection(
                 new GroundCircleDecorator(Hud) {
-                    Brush = Hud.Render.CreateBrush(255, 255, 148, 20, 3),
+                    Brush = Hud.Render.CreateBrush(255, 255, 148, 20, 5),
                     Radius = 3
                 },
 				new GroundCircleDecorator(Hud) {
-                    Brush = Hud.Render.CreateBrush(255, 255, 148, 20, 1, SharpDX.Direct2D1.DashStyle.Dash),
+                    Brush = Hud.Render.CreateBrush(255, 255, 148, 20, 3, SharpDX.Direct2D1.DashStyle.Dash),
                     Radius = 2
                 },
 				new GroundCircleDecorator(Hud) {
@@ -69,7 +69,7 @@ namespace Turbo.Plugins.CB
                     Radius = 3	
                 },
 				new GroundCircleDecorator(Hud) {
-                    Brush = Hud.Render.CreateBrush(255, 64, 128, 255, 1, SharpDX.Direct2D1.DashStyle.Dash),
+                    Brush = Hud.Render.CreateBrush(255, 64, 128, 255, 5, SharpDX.Direct2D1.DashStyle.Dash),
                     Radius = 2	
                 },
 				new GroundCircleDecorator(Hud) {
@@ -96,7 +96,7 @@ namespace Turbo.Plugins.CB
                     Radius = 3,
                 },
 				new GroundCircleDecorator(Hud) {
-                    Brush = Hud.Render.CreateBrush(255, 255, 148, 20, 1, SharpDX.Direct2D1.DashStyle.Dash),
+                    Brush = Hud.Render.CreateBrush(255, 255, 148, 20, 5, SharpDX.Direct2D1.DashStyle.Dash),
                     Radius = 2	
                 },
 				new GroundCircleDecorator(Hud) {
@@ -106,8 +106,8 @@ namespace Turbo.Plugins.CB
                 );
 			RareMinionDecorator = new WorldDecoratorCollection(
 				new GroundCircleDecorator(Hud) {
-                    Brush = Hud.Render.CreateBrush(255, 255, 148, 20, 1, SharpDX.Direct2D1.DashStyle.Dash),
-                    Radius = 2
+                    Brush = Hud.Render.CreateBrush(255, 255, 148, 20, 3, SharpDX.Direct2D1.DashStyle.Dash),
+                    Radius = 0
                 },
 				new GroundCircleDecorator(Hud) {
                     Brush = Hud.Render.CreateBrush(180, 255, 0, 0, 6, SharpDX.Direct2D1.DashStyle.Dash),
@@ -122,11 +122,11 @@ namespace Turbo.Plugins.CB
 			
 			UniqueDecorator = new WorldDecoratorCollection(
                 new GroundCircleDecorator(Hud) {
-                    Brush = Hud.Render.CreateBrush(255,255,140,255, 6f),
+                    Brush = Hud.Render.CreateBrush(255,255,140,255, 5),
                     Radius = 3
                 },
 				new GroundCircleDecorator(Hud) {
-                    Brush = Hud.Render.CreateBrush(255,255,140,255, 1, SharpDX.Direct2D1.DashStyle.Dash),
+                    Brush = Hud.Render.CreateBrush(255,255,140,255, 5, SharpDX.Direct2D1.DashStyle.Dash),
                     Radius = 2
                 },
 				new GroundCircleDecorator(Hud) {
