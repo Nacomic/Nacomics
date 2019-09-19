@@ -65,7 +65,7 @@ namespace Turbo.Plugins.CB
             );
             ChampionDecorator = new WorldDecoratorCollection(
                 new GroundCircleDecorator(Hud) {
-                    Brush = Hud.Render.CreateBrush(255, 64, 128, 255, 3),
+                    Brush = Hud.Render.CreateBrush(255, 64, 128, 255, 6f),
                     Radius = 3	
                 },
 				new GroundCircleDecorator(Hud) {
@@ -122,7 +122,7 @@ namespace Turbo.Plugins.CB
 			
 			UniqueDecorator = new WorldDecoratorCollection(
                 new GroundCircleDecorator(Hud) {
-                    Brush = Hud.Render.CreateBrush(255,255,140,255, 3),
+                    Brush = Hud.Render.CreateBrush(255,255,140,255, 6f),
                     Radius = 3
                 },
 				new GroundCircleDecorator(Hud) {
@@ -142,7 +142,7 @@ namespace Turbo.Plugins.CB
 
             BossDecorator = new WorldDecoratorCollection(
                 new GroundCircleDecorator(Hud) {
-                    Brush = Hud.Render.CreateBrush(255, 255, 96, 0, 4),
+                    Brush = Hud.Render.CreateBrush(255, 255, 96, 0, 6f),
                     Radius = 4
                 },
 				new GroundCircleDecorator(Hud) {
