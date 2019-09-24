@@ -23,7 +23,7 @@ namespace Turbo.Plugins.TCT
         public void Customize()
         {
             //##### ARCANE #####
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Arcane, "∫Ò¿¸");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Arcane, "ÎπÑÏ†Ñ");
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Arcane);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.Arcane, new WorldDecoratorCollection(
             new GroundLabelDecorator(Hud)
@@ -36,7 +36,7 @@ namespace Turbo.Plugins.TCT
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Avenger);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Desecrator);
             //##### ELECTRIFIED #####
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Electrified, "∞®¿¸");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Electrified, "Í∞êÏ†Ñ");
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Electrified);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.Electrified, new WorldDecoratorCollection(
             new GroundLabelDecorator(Hud)
@@ -49,7 +49,7 @@ namespace Turbo.Plugins.TCT
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.ExtraHealth);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Fast);
             //##### FIRECHAINS #####
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.FireChains, "ªÁΩΩ");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.FireChains, "ÏÇ¨Ïä¨");
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.FireChains);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.FireChains, new WorldDecoratorCollection(
             new GroundLabelDecorator(Hud)
@@ -59,10 +59,19 @@ namespace Turbo.Plugins.TCT
                 BackgroundBrush = Hud.Render.CreateBrush(255, 170, 50, 0, 0),
             }
             ));
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Frozen);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.FrozenPulse);
+            //##### Frozen #####
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Frozen, "ÎπôÍ≤∞");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Frozen);
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.Frozen, new WorldDecoratorCollection(
+            new GroundLabelDecorator(Hud)
+            {
+                BorderBrush = Hud.Render.CreateBrush(128, 0, 0, 0, 2),
+                TextFont = Hud.Render.CreateFont("tahoma", 10f, 255, 255, 255, 255, true, false, false),
+                BackgroundBrush = Hud.Render.CreateBrush(255, 255, 0, 0, 0),
+            }
             //##### HealthLink #####
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.HealthLink, "ª˝ø¨");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.HealthLink, "ÏÉùÏó∞");
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.HealthLink);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.HealthLink, new WorldDecoratorCollection(
             new GroundLabelDecorator(Hud)
@@ -73,7 +82,7 @@ namespace Turbo.Plugins.TCT
             }
             ));
             //##### HORDE #####
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Horde, "π´∏Æ");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Horde, "Î¨¥Î¶¨");
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Horde);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.Horde, new WorldDecoratorCollection(
             new GroundLabelDecorator(Hud)
@@ -84,7 +93,7 @@ namespace Turbo.Plugins.TCT
             }
             ));
             //##### ILLUSIONIST #####
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Illusionist, "»Øøµ");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Illusionist, "ÌôòÏòÅ");
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Illusionist);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.Illusionist, new WorldDecoratorCollection(
             new GroundLabelDecorator(Hud)
@@ -96,7 +105,7 @@ namespace Turbo.Plugins.TCT
             ));
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Jailer);
             //##### JUGGERNAUT #####
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Juggernaut, "∞≈«—");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Juggernaut, "Í±∞Ìïú");
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Juggernaut);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.Juggernaut, new WorldDecoratorCollection(
             new GroundLabelDecorator(Hud)
@@ -109,7 +118,7 @@ namespace Turbo.Plugins.TCT
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Knockback);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.MissileDampening);
             //##### MOLTEN #####
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Molten, "¿∂«ÿ");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Molten, "ÏúµÌï¥");
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Molten);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.Molten, new WorldDecoratorCollection(
             new GroundLabelDecorator(Hud)
@@ -126,7 +135,7 @@ namespace Turbo.Plugins.TCT
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Poison);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Reflect);
             //##### SHIELDING #####
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Shielding, "∫∏∏∑");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Shielding, "Î≥¥Îßâ");
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Shielding);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.Shielding, new WorldDecoratorCollection(
             new GroundLabelDecorator(Hud)
@@ -137,7 +146,7 @@ namespace Turbo.Plugins.TCT
             }
             ));
             //##### Teleporter #####
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Teleporter, "≈⁄∆˜");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Teleporter, "ÌÖîÌè¨");
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Teleporter);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.Teleporter, new WorldDecoratorCollection(
             new GroundLabelDecorator(Hud)
@@ -151,7 +160,7 @@ namespace Turbo.Plugins.TCT
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Vortex);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Waller);
             //##### WORMHOLE #####
-            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Wormhole, "Ω√∞¯");
+            Hud.GetPlugin<EliteMonsterAffixPlugin>().CustomAffixNames.Add(MonsterAffix.Wormhole, "ÏãúÍ≥µ");
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Remove(MonsterAffix.Wormhole);
             Hud.GetPlugin<EliteMonsterAffixPlugin>().AffixDecorators.Add(MonsterAffix.Wormhole, new WorldDecoratorCollection(
             new GroundLabelDecorator(Hud)
